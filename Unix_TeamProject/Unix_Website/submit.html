@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Submit</title>
+		<link href = "submit.css" type = "text/css" rel = "stylesheet">
+		<script src="submit.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class = "navbar">
+			<u1>
+				<li><a href="homepage.html">Back To Main Page</a></li>
+			</u1>
+		</div>
+		<div class = "submit-form">
+			<form action = "file.doc" method = "get">
+				<p>First Name:</p>
+				<input type = "text" name = "firstname" placeholder = "First Name">
+
+				<p>Last Name:</p>
+				<input type = "text" name = "lastname" placeholder = "Last Name">
+
+				<p>Email:</p>
+				<input type = "email" name = "email" placeholder = "Email">
+
+				<p>Address:</p>
+				<input type = "address" name = "address" placeholder = "Address">
+
+				<p>Amount of land</p>
+				<input type = "amountOfLand" name = "amountOfLand" placeholder = "Amount of Land">
+
+				<p>Amount To Pay Workers</p>
+				<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+				<label>val:</label>
+
+				<p>What Services Offered</p>
+				<input type = "servicesOffered" name = "servicesOffered" placeholder = "Services Offered">
+
+				<br><br>
+
+				<button type = "submit" id = "send" onclick="getInfo()">Submit</button>
+			</form>
+		</div>
+	</body>
+</html>
